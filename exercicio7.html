@@ -1,0 +1,18 @@
+<script>
+        let notas = [];
+        let nota;
+
+        
+        for (let i = 1; i <= 6; i++) {
+        do {
+            nota = parseFloat(prompt(`Digite a nota ${i} (0 a 10):`));
+        } while (nota < 0 || nota > 10); 
+        notas.push(nota);
+        }
+
+        
+        let media = notas.reduce((total, nota) => total + nota, 0) / notas.length;
+
+        
+        document.write(`A média do aluno é ${media.toFixed(2)}`);
+</script>

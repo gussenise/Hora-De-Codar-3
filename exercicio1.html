@@ -1,0 +1,13 @@
+<script>    
+        var valor1 = parseInt(prompt("Informe o primeiro valor:"));
+        var valor2 = parseInt(prompt("Informe o segundo valor (não pode ser zero ou negativo):"));
+
+        while (valor2 <= 0) {
+        valor2 = parseInt(prompt("Valor inválido. Informe um novo valor (não pode ser zero ou negativo):"));
+        }
+
+        var resultado = valor1 / valor2;
+        alert("O resultado da divisão de " + valor1 + " por " + valor2 + " é igual a " + resultado);
+
+        
+</script>

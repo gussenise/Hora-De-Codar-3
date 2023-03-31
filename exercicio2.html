@@ -1,0 +1,17 @@
+<script>
+        var segundos = 30;
+
+        function contagemRegressiva() {
+        document.write(segundos + "<br>");
+
+        if (segundos == 0) {
+            document.write("EXPLOSÃO!!!");
+        } else {
+            segundos--;
+            setTimeout(contagemRegressiva, 1000);
+        }
+        }
+
+        contagemRegressiva();
+
+</script>

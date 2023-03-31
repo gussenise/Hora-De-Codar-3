@@ -1,0 +1,20 @@
+<script>
+        const primeiroNumero = parseInt(prompt("Digite o primeiro número inteiro:"));
+        const segundoNumero = parseInt(prompt("Digite o segundo número inteiro:"));
+
+        let soma = primeiroNumero + segundoNumero;
+        let qtdNumeros = 2;
+
+        document.write(`Os números inteiros entre ${primeiroNumero} e ${segundoNumero} são: `);
+
+        for (let i = primeiroNumero + 1; i < segundoNumero; i++) {
+        soma += i;
+        qtdNumeros++;
+        document.write(`${i}, `);
+        }
+
+        const media = soma / qtdNumeros;
+
+        document.write(`<br>A média aritmética dos números é ${media}.`);
+
+</script>
